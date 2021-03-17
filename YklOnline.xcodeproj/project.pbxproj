@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95C4B0122534110D007F44A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C4B0112534110D007F44A4 /* AppDelegate.m */; };
+		95C4B02025341126007F44A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C4B01F25341126007F44A4 /* Assets.xcassets */; };
+		95C4B02325341126007F44A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C4B02125341126007F44A4 /* LaunchScreen.storyboard */; };
+		95C4B02625341126007F44A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C4B02525341126007F44A4 /* main.m */; };
+		95C4B03025341126007F44A4 /* YklOnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C4B02F25341126007F44A4 /* YklOnlineTests.m */; };
+		95C4B03B25341126007F44A4 /* YklOnlineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C4B03A25341126007F44A4 /* YklOnlineUITests.m */; };
+		95C4B04A25341175007F44A4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C4B04925341175007F44A4 /* MainViewController.m */; };
+		95C4B06D25342B35007F44A4 /* ArcGIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C4B06C25342B35007F44A4 /* ArcGIS.framework */; };
+		95C4B06E25342B36007F44A4 /* ArcGIS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95C4B06C25342B35007F44A4 /* ArcGIS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95C4B07225342F49007F44A4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C4B07125342F49007F44A4 /* libc++.tbd */; };
+		95C4B0752534321A007F44A4 /* ArcGISMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C4B0742534321A007F44A4 /* ArcGISMapView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95C4B02C25341126007F44A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C4B0052534110D007F44A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C4B00C2534110D007F44A4;
+			remoteInfo = YklOnline;
+		};
+		95C4B03725341126007F44A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C4B0052534110D007F44A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C4B00C2534110D007F44A4;
+			remoteInfo = YklOnline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95C4B06F25342B36007F44A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95C4B06E25342B36007F44A4 /* ArcGIS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		95C4B00D2534110D007F44A4 /* YklOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YklOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C4B0102534110D007F44A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95C4B0112534110D007F44A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95C4B01F25341126007F44A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95C4B02225341126007F44A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95C4B02425341126007F44A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C4B02525341126007F44A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95C4B02B25341126007F44A4 /* YklOnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YklOnlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C4B02F25341126007F44A4 /* YklOnlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YklOnlineTests.m; sourceTree = "<group>"; };
+		95C4B03125341126007F44A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C4B03625341126007F44A4 /* YklOnlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YklOnlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C4B03A25341126007F44A4 /* YklOnlineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YklOnlineUITests.m; sourceTree = "<group>"; };
+		95C4B03C25341126007F44A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C4B04825341175007F44A4 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		95C4B04925341175007F44A4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		95C4B06C25342B35007F44A4 /* ArcGIS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ArcGIS.framework; path = ../../Library/SDKs/ArcGIS/iOS/Frameworks/Dynamic/ArcGIS.framework; sourceTree = "<group>"; };
+		95C4B07125342F49007F44A4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		95C4B0732534321A007F44A4 /* ArcGISMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcGISMapView.h; sourceTree = "<group>"; };
+		95C4B0742534321A007F44A4 /* ArcGISMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcGISMapView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95C4B00A2534110D007F44A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C4B07225342F49007F44A4 /* libc++.tbd in Frameworks */,
+				95C4B06D25342B35007F44A4 /* ArcGIS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C4B02825341126007F44A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C4B03325341126007F44A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95C4B0042534110D007F44A4 = {
+			isa = PBXGroup;
+			children = (
+				95C4B00F2534110D007F44A4 /* YklOnline */,
+				95C4B02E25341126007F44A4 /* YklOnlineTests */,
+				95C4B03925341126007F44A4 /* YklOnlineUITests */,
+				95C4B00E2534110D007F44A4 /* Products */,
+				95C4B06B25342B35007F44A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95C4B00E2534110D007F44A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C4B00D2534110D007F44A4 /* YklOnline.app */,
+				95C4B02B25341126007F44A4 /* YklOnlineTests.xctest */,
+				95C4B03625341126007F44A4 /* YklOnlineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C4B00F2534110D007F44A4 /* YklOnline */ = {
+			isa = PBXGroup;
+			children = (
+				95C4B06925341E09007F44A4 /* ArcGISLayer */,
+				95C4B06825341E09007F44A4 /* ArcGISToolKit */,
+				95C4B06A25341E09007F44A4 /* ArcGISVC */,
+				95C4B06725341E09007F44A4 /* ArcGISView */,
+				95C4B0102534110D007F44A4 /* AppDelegate.h */,
+				95C4B0112534110D007F44A4 /* AppDelegate.m */,
+				95C4B01F25341126007F44A4 /* Assets.xcassets */,
+				95C4B02125341126007F44A4 /* LaunchScreen.storyboard */,
+				95C4B02425341126007F44A4 /* Info.plist */,
+				95C4B02525341126007F44A4 /* main.m */,
+				95C4B04825341175007F44A4 /* MainViewController.h */,
+				95C4B04925341175007F44A4 /* MainViewController.m */,
+			);
+			path = YklOnline;
+			sourceTree = "<group>";
+		};
+		95C4B02E25341126007F44A4 /* YklOnlineTests */ = {
+			isa = PBXGroup;
+			children = (
+				95C4B02F25341126007F44A4 /* YklOnlineTests.m */,
+				95C4B03125341126007F44A4 /* Info.plist */,
+			);
+			path = YklOnlineTests;
+			sourceTree = "<group>";
+		};
+		95C4B03925341126007F44A4 /* YklOnlineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95C4B03A25341126007F44A4 /* YklOnlineUITests.m */,
+				95C4B03C25341126007F44A4 /* Info.plist */,
+			);
+			path = YklOnlineUITests;
+			sourceTree = "<group>";
+		};
+		95C4B06725341E09007F44A4 /* ArcGISView */ = {
+			isa = PBXGroup;
+			children = (
+				95C4B0732534321A007F44A4 /* ArcGISMapView.h */,
+				95C4B0742534321A007F44A4 /* ArcGISMapView.m */,
+			);
+			path = ArcGISView;
+			sourceTree = "<group>";
+		};
+		95C4B06825341E09007F44A4 /* ArcGISToolKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ArcGISToolKit;
+			sourceTree = "<group>";
+		};
+		95C4B06925341E09007F44A4 /* ArcGISLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ArcGISLayer;
+			sourceTree = "<group>";
+		};
+		95C4B06A25341E09007F44A4 /* ArcGISVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ArcGISVC;
+			sourceTree = "<group>";
+		};
+		95C4B06B25342B35007F44A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95C4B07125342F49007F44A4 /* libc++.tbd */,
+				95C4B06C25342B35007F44A4 /* ArcGIS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95C4B00C2534110D007F44A4 /* YklOnline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C4B03F25341126007F44A4 /* Build configuration list for PBXNativeTarget "YklOnline" */;
+			buildPhases = (
+				95C4B0092534110D007F44A4 /* Sources */,
+				95C4B00A2534110D007F44A4 /* Frameworks */,
+				95C4B00B2534110D007F44A4 /* Resources */,
+				95C4B06F25342B36007F44A4 /* Embed Frameworks */,
+				95C4B07025342B89007F44A4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YklOnline;
+			productName = YklOnline;
+			productReference = 95C4B00D2534110D007F44A4 /* YklOnline.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95C4B02A25341126007F44A4 /* YklOnlineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C4B04225341126007F44A4 /* Build configuration list for PBXNativeTarget "YklOnlineTests" */;
+			buildPhases = (
+				95C4B02725341126007F44A4 /* Sources */,
+				95C4B02825341126007F44A4 /* Frameworks */,
+				95C4B02925341126007F44A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95C4B02D25341126007F44A4 /* PBXTargetDependency */,
+			);
+			name = YklOnlineTests;
+			productName = YklOnlineTests;
+			productReference = 95C4B02B25341126007F44A4 /* YklOnlineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95C4B03525341126007F44A4 /* YklOnlineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C4B04525341126007F44A4 /* Build configuration list for PBXNativeTarget "YklOnlineUITests" */;
+			buildPhases = (
+				95C4B03225341126007F44A4 /* Sources */,
+				95C4B03325341126007F44A4 /* Frameworks */,
+				95C4B03425341126007F44A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95C4B03825341126007F44A4 /* PBXTargetDependency */,
+			);
+			name = YklOnlineUITests;
+			productName = YklOnlineUITests;
+			productReference = 95C4B03625341126007F44A4 /* YklOnlineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95C4B0052534110D007F44A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = guojian;
+				TargetAttributes = {
+					95C4B00C2534110D007F44A4 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					95C4B02A25341126007F44A4 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 95C4B00C2534110D007F44A4;
+					};
+					95C4B03525341126007F44A4 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 95C4B00C2534110D007F44A4;
+					};
+				};
+			};
+			buildConfigurationList = 95C4B0082534110D007F44A4 /* Build configuration list for PBXProject "YklOnline" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95C4B0042534110D007F44A4;
+			productRefGroup = 95C4B00E2534110D007F44A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95C4B00C2534110D007F44A4 /* YklOnline */,
+				95C4B02A25341126007F44A4 /* YklOnlineTests */,
+				95C4B03525341126007F44A4 /* YklOnlineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95C4B00B2534110D007F44A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C4B02325341126007F44A4 /* LaunchScreen.storyboard in Resources */,
+				95C4B02025341126007F44A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C4B02925341126007F44A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C4B03425341126007F44A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95C4B07025342B89007F44A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcGIS.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95C4B0092534110D007F44A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C4B0752534321A007F44A4 /* ArcGISMapView.m in Sources */,
+				95C4B02625341126007F44A4 /* main.m in Sources */,
+				95C4B0122534110D007F44A4 /* AppDelegate.m in Sources */,
+				95C4B04A25341175007F44A4 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C4B02725341126007F44A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C4B03025341126007F44A4 /* YklOnlineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C4B03225341126007F44A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C4B03B25341126007F44A4 /* YklOnlineUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95C4B02D25341126007F44A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C4B00C2534110D007F44A4 /* YklOnline */;
+			targetProxy = 95C4B02C25341126007F44A4 /* PBXContainerItemProxy */;
+		};
+		95C4B03825341126007F44A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C4B00C2534110D007F44A4 /* YklOnline */;
+			targetProxy = 95C4B03725341126007F44A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95C4B02125341126007F44A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C4B02225341126007F44A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95C4B03D25341126007F44A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95C4B03E25341126007F44A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95C4B04025341126007F44A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Dynamic",
+				);
+				INFOPLIST_FILE = YklOnline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ykl.YklOnline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		95C4B04125341126007F44A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Dynamic",
+				);
+				INFOPLIST_FILE = YklOnline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ykl.YklOnline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		95C4B04325341126007F44A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YklOnlineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ykl.YklOnlineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YklOnline.app/YklOnline";
+			};
+			name = Debug;
+		};
+		95C4B04425341126007F44A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YklOnlineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ykl.YklOnlineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YklOnline.app/YklOnline";
+			};
+			name = Release;
+		};
+		95C4B04625341126007F44A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YklOnlineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ykl.YklOnlineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YklOnline;
+			};
+			name = Debug;
+		};
+		95C4B04725341126007F44A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YklOnlineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ykl.YklOnlineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YklOnline;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95C4B0082534110D007F44A4 /* Build configuration list for PBXProject "YklOnline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C4B03D25341126007F44A4 /* Debug */,
+				95C4B03E25341126007F44A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C4B03F25341126007F44A4 /* Build configuration list for PBXNativeTarget "YklOnline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C4B04025341126007F44A4 /* Debug */,
+				95C4B04125341126007F44A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C4B04225341126007F44A4 /* Build configuration list for PBXNativeTarget "YklOnlineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C4B04325341126007F44A4 /* Debug */,
+				95C4B04425341126007F44A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C4B04525341126007F44A4 /* Build configuration list for PBXNativeTarget "YklOnlineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C4B04625341126007F44A4 /* Debug */,
+				95C4B04725341126007F44A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95C4B0052534110D007F44A4 /* Project object */;
+}
